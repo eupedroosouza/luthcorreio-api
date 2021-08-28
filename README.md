@@ -19,6 +19,16 @@
 Pegue a última versão em https://github.com/eupedroosouza/luthcorreio-api/releases.
 
 # API
+```java
+// Get the API instance
+MailAPI mailAPI = new MailAPI();
+				
+// Pick up the player's handle.
+MailPlayer mailPlayer = mailAPI.getMailPlayer(player);
+				
+// ItemStack from add.
+ItemStack stack = new ItemStack(Material.DIAMOND);
+```
 
 # Informações do desenvolvedor
 Plugins feitos pelo Pedro(ou PedroCodes)
