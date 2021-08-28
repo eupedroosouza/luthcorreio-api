@@ -26,8 +26,13 @@ Pegue a última versão em https://github.com/eupedroosouza/luthcorreio-api/rele
 MailAPI mailAPI = new MailAPI();
 				
 // Pick up the player's handle.
-MailPlayer mailPlayer = mailAPI.getMailPlayer(player);
-				
+MailPlayer mailPlayer = mailAPI.getMailPlayer(player);			
+```
+
+#### Pegando item do jogador
+```java
+// Getting the item with the id.
+mailPlayer.getItem(id);
 ```
 
 #### Adicionando item ao jogador.
@@ -46,6 +51,28 @@ mailPlayer.addItem(stack, TimeUnit.SECONDS.toMillis(20));
 				
 // Adding item with ItemStack, sender and expiry time (in milliseconds).
 mailPlayer.addItem(stack, "Mandando por CONSOLE", TimeUnit.SECONDS.toMillis(20));
+```
+
+#### Removendo item do jogador.
+```java
+// Removing with Item id.
+mailPlayer.removeItem(id);
+				
+// Removing with net.luthcraft.mail.api.Item.
+mailPlayer.removeItem(item);
+```
+
+
+#### Bloqueando e desbloqueando presentes.
+```java
+// Blocking gifts.
+mailPlayer.block();
+				
+// Unlocking the presents.
+mailPlayer.unblock();
+				
+// Checking if gifts are locked.
+mailPlayer.isBlock();
 ```
 
 # Informações do desenvolvedor
