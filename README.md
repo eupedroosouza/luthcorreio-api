@@ -19,6 +19,8 @@
 Pegue a última versão em https://github.com/eupedroosouza/luthcorreio-api/releases.
 
 # API
+
+## h2 Pegando a instância da API e o manipulador do jogador.
 ```java
 // Get the API instance
 MailAPI mailAPI = new MailAPI();
@@ -26,8 +28,24 @@ MailAPI mailAPI = new MailAPI();
 // Pick up the player's handle.
 MailPlayer mailPlayer = mailAPI.getMailPlayer(player);
 				
-// ItemStack from add.
+```
+
+## h2 Adicionando item ao jogador.
+```java
+// ItemStack to add.
 ItemStack stack = new ItemStack(Material.DIAMOND);
+				
+// Adding item with ItemStack.
+mailPlayer.addItem(stack);
+				
+// Adding item with ItemStack and sender.
+mailPlayer.addItem(stack, "Mandando por CONSOLE");
+				
+// Adding item with ItemStack and expiry time (in milliseconds).
+mailPlayer.addItem(stack, TimeUnit.SECONDS.toMillis(20));
+				
+// Adding item with ItemStack, sender and expiry time (in milliseconds).
+mailPlayer.addItem(stack, "Mandando por CONSOLE", TimeUnit.SECONDS.toMillis(20));
 ```
 
 # Informações do desenvolvedor
