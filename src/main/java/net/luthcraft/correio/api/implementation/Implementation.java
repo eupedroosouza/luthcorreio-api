@@ -10,8 +10,8 @@ public abstract class Implementation {
 	
 	private static Implementation implementation;
 	
-	public Implementation() {
-		implementation = this;
+	public Implementation(Implementation imp) {
+		implementation = imp;	
 	}
 	
 	public abstract MailPlayer getMailPlayer(UUID uuid);
