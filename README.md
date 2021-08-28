@@ -65,7 +65,7 @@ mailPlayer.removeItem(item);
 
 #### Bloqueando e desbloqueando presentes.
 ```java
-// Blocking gifts.
+// Blocking the presents.
 mailPlayer.block();
 				
 // Unlocking the presents.
