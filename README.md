@@ -18,6 +18,10 @@
 ```
 Pegue a última versão em https://github.com/eupedroosouza/luthcorreio-api/releases.
 
+# Documentação
+
+Veja o javadoc em: https://eupedroosouza.github.io/luthcorreio-api/apidocs/.
+
 # API
 
 #### Pegando a instância da API e o manipulador do jogador.
