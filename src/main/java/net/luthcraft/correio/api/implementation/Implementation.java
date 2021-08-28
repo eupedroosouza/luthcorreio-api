@@ -10,16 +10,16 @@ public abstract class Implementation {
 	
 	private static Implementation implementation;
 	
-	public Implementation(Implementation imp) {
-		implementation = imp;	
-	}
-	
 	public abstract MailPlayer getMailPlayer(UUID uuid);
 	public abstract MailPlayer getMailPlayer(String name);
 	public abstract MailPlayer getMailPlayer(Player player);
 
 	public static Implementation getImplementation() {
 		return implementation;
+	}
+	
+	public static void setImplementation(Implementation imp) {
+		implementation = imp;
 	}
 
 }

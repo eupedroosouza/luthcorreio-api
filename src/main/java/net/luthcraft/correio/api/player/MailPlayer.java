@@ -13,6 +13,7 @@ public interface MailPlayer {
 	 * Add item to player.
 	 * 
 	 * @param stack	{@link org.bukkit.inventory.ItemStack} Item object.
+	 * @param sender sender of the item
 	 * @return item created
 	 */
 	public Item addItem(ItemStack stack, String sender);
@@ -20,7 +21,7 @@ public interface MailPlayer {
 	/**
 	 * Add item to player.
 	 * 
-	 * @param item	{@link net.luthcraft.correio.models.mail.Item}
+	 * @param item	{@link net.luthcraft.correio.api.item.Item}
 	 * @return item created
 	 */
 	public Item addItem(Item item);
