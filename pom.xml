@@ -10,6 +10,7 @@
 	
 	<build>
 		<defaultGoal>clean package javadoc:javadoc javadoc:jar</defaultGoal>
+		<finalName>LuthCorreioAPI</finalName>
         <sourceDirectory>src/main/java</sourceDirectory>
         <resources>
             <resource>

@@ -13,7 +13,6 @@ public interface MailPlayer {
 	 * Add item to player.
 	 * 
 	 * @param stack	{@link org.bukkit.inventory.ItemStack} Item object.
-	 * @param sender sender of the item
 	 * @return item created
 	 */
 	public Item addItem(ItemStack stack);
@@ -22,7 +21,7 @@ public interface MailPlayer {
 	 * Add item to player.
 	 * 
 	 * @param stack	{@link org.bukkit.inventory.ItemStack} Item object.
-	 * @param sender sender of the item
+	 * @param sender Sender of the item
 	 * @return item created
 	 */
 	public Item addItem(ItemStack stack, String sender);
@@ -40,7 +39,7 @@ public interface MailPlayer {
 	 * Add item to player.
 	 * 
 	 * @param stack	{@link org.bukkit.inventory.ItemStack} Item object.
-	 * @param sender sender of the item
+	 * @param sender Sender of the item
 	 * @param expiry expiration time in milliseconds
 	 * @return item created
 	 */
