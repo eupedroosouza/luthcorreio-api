@@ -6,10 +6,10 @@
 	
 	<groupId>net.luthcraft.correio.api</groupId>
 	<artifactId>LuthCorreioAPI</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 	
 	<build>
-		<defaultGoal>clean package</defaultGoal>
+		<defaultGoal>clean package javadoc:javadoc javadoc:jar</defaultGoal>
         <sourceDirectory>src/main/java</sourceDirectory>
         <resources>
             <resource>
