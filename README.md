@@ -20,7 +20,7 @@ Pegue a última versão em https://github.com/eupedroosouza/luthcorreio-api/rele
 
 # API
 
-#### h2 Pegando a instância da API e o manipulador do jogador.
+#### Pegando a instância da API e o manipulador do jogador.
 ```java
 // Get the API instance
 MailAPI mailAPI = new MailAPI();
