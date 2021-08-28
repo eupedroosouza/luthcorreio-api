@@ -20,7 +20,7 @@ Pegue a última versão em https://github.com/eupedroosouza/luthcorreio-api/rele
 
 # API
 
-## h2 Pegando a instância da API e o manipulador do jogador.
+#### h2 Pegando a instância da API e o manipulador do jogador.
 ```java
 // Get the API instance
 MailAPI mailAPI = new MailAPI();
@@ -30,7 +30,7 @@ MailPlayer mailPlayer = mailAPI.getMailPlayer(player);
 				
 ```
 
-## h2 Adicionando item ao jogador.
+#### Adicionando item ao jogador.
 ```java
 // ItemStack to add.
 ItemStack stack = new ItemStack(Material.DIAMOND);
